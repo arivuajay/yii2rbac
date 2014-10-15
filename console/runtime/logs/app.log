@@ -1,0 +1,980 @@
+2014-10-14 15:56:38 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:56:38 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413294998.5617
+    'REQUEST_TIME' => 1413294998
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@auth/migrations'
+    ]
+    'argc' => 3
+]
+2014-10-14 15:56:45 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:56:45 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295005.8621
+    'REQUEST_TIME' => 1413295005
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:56:51 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:56:51 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295011.4475
+    'REQUEST_TIME' => 1413295011
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:57:05 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:57:05 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\xampp\\htdocs\\yii-application\\'
+    'PHP_SELF' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'SCRIPT_NAME' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'PATH_TRANSLATED' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295025.0893
+    'REQUEST_TIME' => 1413295025
+    'argv' => [
+        0 => 'D:\\xampp\\htdocs\\yii-application\\yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@auth/migrations'
+    ]
+    'argc' => 3
+]
+2014-10-14 15:57:14 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:57:14 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295034.0878
+    'REQUEST_TIME' => 1413295034
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:57:58 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:57:58 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'YII_PATH' => 'D:\\xampp\\htdocs\\yii-application\\'
+    'PHP_SELF' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'SCRIPT_NAME' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'SCRIPT_FILENAME' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'PATH_TRANSLATED' => 'D:\\xampp\\htdocs\\yii-application\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295078.2702
+    'REQUEST_TIME' => 1413295078
+    'argv' => [
+        0 => 'D:\\xampp\\htdocs\\yii-application\\yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:58:04 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:58:03 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295083.9895
+    'REQUEST_TIME' => 1413295083
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:58:29 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:58:29 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295109.6364
+    'REQUEST_TIME' => 1413295109
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:59:29 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:59:29 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295169.2681
+    'REQUEST_TIME' => 1413295169
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2014-10-14 15:59:32 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 15:59:32 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295172.8212
+    'REQUEST_TIME' => 1413295172
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2014-10-14 16:00:48 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 16:00:48 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295248.8958
+    'REQUEST_TIME' => 1413295248
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2014-10-14 16:01:49 [-][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class yii\gii\Module does not exist' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('yii\\gii\\Module')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('yii\\gii\\Module')
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\\gii\\Module', Array, Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('yii\\gii\\Module', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(354): yii\BaseYii::createObject('yii\\gii\\Module', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(304): yii\base\Module->getModule('gii')
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(267): yii\base\Application->bootstrap()
+#7 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(114): yii\base\Application->init()
+#8 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Object.php(107): yii\console\Application->init()
+#9 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(206): yii\base\Object->__construct(Array)
+#10 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(79): yii\base\Application->__construct(Array)
+#11 D:\xampp\htdocs\yii-application\yii(30): yii\console\Application->__construct(Array)
+#12 {main}
+2014-10-14 16:01:49 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413295309.0357
+    'REQUEST_TIME' => 1413295309
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2014-10-14 16:36:48 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown component ID: db' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\ServiceLocator.php:136
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\controllers\MigrateController.php(95): yii\di\ServiceLocator->get('db')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('up', Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('up', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate/up', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate/up', Array)
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 D:\xampp\htdocs\yii-application\yii(31): yii\base\Application->run()
+#8 {main}
+2014-10-14 16:36:48 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413297408.4106
+    'REQUEST_TIME' => 1413297408
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@auth/migrations'
+    ]
+    'argc' => 3
+]
+2014-10-14 16:36:58 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown component ID: db' in D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\di\ServiceLocator.php:136
+Stack trace:
+#0 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\controllers\MigrateController.php(95): yii\di\ServiceLocator->get('db')
+#1 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Controller.php(149): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Controller.php(91): yii\base\Controller->runAction('up', Array)
+#3 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Module.php(455): yii\console\Controller->runAction('up', Array)
+#4 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(161): yii\base\Module->runAction('migrate/up', Array)
+#5 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\console\Application.php(137): yii\console\Application->runAction('migrate/up', Array)
+#6 D:\xampp\htdocs\yii-application\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 D:\xampp\htdocs\yii-application\yii(31): yii\base\Application->run()
+#8 {main}
+2014-10-14 16:36:58 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Arivu\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'ARK-9'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'configsetroot' => 'C:\\Windows\\ConfigSetRoot'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HerokuPath' => 'C:\\Program Files (x86)\\Heroku'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Arivu'
+    'LOCALAPPDATA' => 'C:\\Users\\Arivu\\AppData\\Local'
+    'LOGONSERVER' => '\\\\ARK-9'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\Prog Files\\nodejs\\;C:\\Program Files (x86)\\Git\\bin;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files (x86)\\VisualSVN Server\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Heroku\\bin;C:\\Program Files (x86)\\git\\cmd;D:\\Ruby200-x64\\bin;C:\\Users\\Arivu\\AppData\\Roaming\\npm'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Arivu\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'ARK-9'
+    'USERDOMAIN_ROAMINGPROFILE' => 'ARK-9'
+    'USERNAME' => 'Arivu'
+    'USERPROFILE' => 'C:\\Users\\Arivu'
+    'VISUALSVN_SERVER' => 'C:\\Program Files (x86)\\VisualSVN Server\\'
+    'windir' => 'C:\\Windows'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1413297418.4527
+    'REQUEST_TIME' => 1413297418
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@auth/migrations'
+    ]
+    'argc' => 3
+]
